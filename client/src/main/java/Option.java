@@ -41,7 +41,7 @@ implements ActionListener {
     start=new JButton( "Start" );
     start.addActionListener( this );
     start.setBorder( BorderFactory.createEtchedBorder() );
-    undo=new JButton( "Zur�ck" );
+    undo=new JButton( "Zurück" );
     undo.addActionListener( this );
     undo.setBorder( BorderFactory.createEtchedBorder() );
     draw=new JButton( "Remis" );

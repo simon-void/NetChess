@@ -19,7 +19,7 @@ implements MouseListener,MouseMotionListener {
   private int[][] futureBoard;				//brauche ich in isBound() und soll nicht neu init werden
   private String[] savedBoardsWhite;			//Stellung gesichert,weiss ist dran
   private String[] savedBoardsBlack;			//Stellung gesichert,schwarz ist dran=>Patt wegen 3mal gleiche Stellung
-  private int savedNumberWhite;				//anzahl der gespeicherten Stellungen Weiss
+  private int savedNumberWhite;				//anzahl der gespeicherten Stellungen Weiß
   private int savedNumberBlack;				//anzahl der gespeicherten Stellungen Schwarz
   private Table parent;
   private ChessUI chessUI;
@@ -724,7 +724,7 @@ implements MouseListener,MouseMotionListener {
     }
   }
 
-  private boolean isWhiteCheck( int[][] board ) {			//Weiss steht im Schach
+  private boolean isWhiteCheck( int[][] board ) {			//Weiß steht im Schach
     Point kingPos=new Point( -1,-1 );
     for( int y=0;y<8;y++ ) {
       for( int x=0;x<8;x++ ) {

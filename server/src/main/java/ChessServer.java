@@ -611,7 +611,7 @@ class InternBoard {
       if( whiteStandUp ) {
         buffer.append( "Schwarz" );
       }else{
-        buffer.append( "Weiss" );
+        buffer.append( "Weiß" );
       }
       player.informTable( buffer.toString() );
     }

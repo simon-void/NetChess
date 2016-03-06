@@ -84,21 +84,21 @@ extends JFrame {
 
   public void stopGame( int endOption ) {
     switch( endOption ) {
-      case CHESSMATE_WHITE:semimodalInfo( "Weiss ist matt","Schwarz hat gewonnen" );break;
-      case CHESSMATE_BLACK:semimodalInfo( "Schwarz ist matt","Weiss hat gewonnen" );break;
-      case CHESSMATE_WHITE_TIMEOUT:semimodalInfo( "Zeit von Weiss abgelaufen","Schwarz hat gewonnen" );break;
-      case CHESSMATE_BLACK_TIMEOUT:semimodalInfo( "Zeit von Schwarz abgelaufen","Weiss hat gewonnen" );break;
-      case CHESSMATE_WHITE_GAVEUP:semimodalInfo( "Weiss hat aufgegeben","Schwarz hat gewonnen" );break;
-      case CHESSMATE_BLACK_GAVEUP:semimodalInfo( "Schwarz hat aufgegeben","Weiss hat gewonnen" );break;
-      case PATT_WHITE:semimodalInfo( "Weiss ist patt","Unentschieden" );break;
+      case CHESSMATE_WHITE:semimodalInfo( "Weiß ist matt","Schwarz hat gewonnen" );break;
+      case CHESSMATE_BLACK:semimodalInfo( "Schwarz ist matt","Weiß hat gewonnen" );break;
+      case CHESSMATE_WHITE_TIMEOUT:semimodalInfo( "Zeit von Weiß abgelaufen","Schwarz hat gewonnen" );break;
+      case CHESSMATE_BLACK_TIMEOUT:semimodalInfo( "Zeit von Schwarz abgelaufen","Weiß hat gewonnen" );break;
+      case CHESSMATE_WHITE_GAVEUP:semimodalInfo( "Weiß hat aufgegeben","Schwarz hat gewonnen" );break;
+      case CHESSMATE_BLACK_GAVEUP:semimodalInfo( "Schwarz hat aufgegeben","Weiß hat gewonnen" );break;
+      case PATT_WHITE:semimodalInfo( "Weiß ist patt","Unentschieden" );break;
       case PATT_BLACK:semimodalInfo( "Schwarz ist patt","Unentschieden" );break;
       case REMIS_CHOSEN:semimodalInfo( "remis gewählt","Unentschieden" );break;
       case REMIS_3TIMES_SAME_POSITION:semimodalInfo( "unentschieden wegen drei-maliger\nWiederhohlung der selben\nPosition"
                                                      ,"Unentschieden" );break;
       case REMIS_NOT_ENOUGH_POWER:semimodalInfo( "remis, nicht mehr genug Material\nzum Mattsetzen übrig ist"
                                                 ,"Unentschieden" );break;
-      case RESIGN_WHITE:semimodalInfo( "Weiss hat aufgegeben","Schwarz hat gewonnen" );break;
-      case RESIGN_BLACK:semimodalInfo( "Schwarz hat aufgegeben","Weiss hat gewonnen" );break;
+      case RESIGN_WHITE:semimodalInfo( "Weiß hat aufgegeben","Schwarz hat gewonnen" );break;
+      case RESIGN_BLACK:semimodalInfo( "Schwarz hat aufgegeben","Weiß hat gewonnen" );break;
       case SYNCHRONIZED_END:semimodalInfo( "der Spieler mit wenigsten\nZeit hat verloren","synchronisiertes Ende" );break;
     }
   }

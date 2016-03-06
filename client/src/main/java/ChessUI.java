@@ -36,7 +36,7 @@ extends JComponent {
   private int borderSize;			//die Größe der Umrandung des Spielfeldes
   private Point activatedArea;			//mousePressed über diesem Feld
   private Point aimedArea;			//mouseMoved   über diesem Feld
-  private boolean whiteView;			//aus der Sicht von Weiss
+  private boolean whiteView;			//aus der Sicht von Weiß
 
   public ChessUI( Chess logic,int[][] chessBoard ) {
     this.chessBoard=chessBoard;
