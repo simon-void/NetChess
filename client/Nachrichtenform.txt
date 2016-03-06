@@ -1,0 +1,42 @@
+"table"	+Nr	+":"		+"message:"	+playername	+":"	+msg;
+				+"newMove:"	+move+":"	+whiteMin+":"+whiteSec+":"+blackMin+":"+blackSec;
+				+"button:"	+"resign:"	+color;
+						+"undo";
+						+"timer:"	+min	+":"	+inc;
+						+"start:"	+playername;
+						+"exit:"	+playername;
+						+"draw";
+						+"sit:"		+color	+":"	+playername;
+						+"standUp:"	+color	+":"	+playername;
+				+"askForUndo";
+				+"undo";
+				+"askForDraw";
+				+"draw";
+				+"player:"	+playername;
+				+"startGame";
+				+"stopGame";									//Player->Server->Player
+				+"askForTime";									//Player->Server
+				+"returnTime:"	+playername;							//Server->whitePlayer
+				+"deliverTimeTo:"+playername+":"+whiteMin+":"+whiteInc+":"+blackMin+":"+blackInc;	//Player->Server
+				+"time:"	+whiteMin+":"+whiteInc+":"+blackMin+":"+blackInc;		//Server->Player
+
+"mainframe:"			+"message:"	+playername	+":"	+msg;
+				+"joinTable:"	+Nr;
+				+"createTable";
+
+"comand:"	+"open:"	+Nr
+		+"join:"	+Nr	+":"+min+":"+incremenr+":"+both-black-white-none"+":"
+						+Spieleranzahl+":"+Spieler getrennt durch ":"
+						+weiss-schwarz-zuschauer+":"+"playing:-notplaying:"+
+						+Zuganzahl+":"+Züge getrennt durch":"
+		+"update:"	+"player:"	+"new:"		+playername;
+						+"remove:"	+playername;
+				+"tableplayer:"	+nr+":"	+"new:"		+playername;
+							+"remove:"	+playername;
+				+"tablelist:"	+nr+":"	+playername;
+				+"tabletime:"	+nr+":"	+min+":"+increment;
+				+"tablestatus:"	+nr+":"	+"sit:-standUp:"+playername+":black-white";
+
+"accept:"	Anzahl der Spieler+":"+Spieler getrennt durch ":" +Tische getrennt durch ":"
+
+Tisch->	nr	+minutes+increment+:playerzahl:+"playernamen getrennt durch :"	+":none_free-white_free-black_free-both_free:"+"Weiß,Schwarz-player"
